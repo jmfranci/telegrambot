@@ -25,7 +25,7 @@ bot.on("message", (msg) => {
   const chatId = msg.chat.id;
   console.log(msg.text);
   bot.sendMessage(chatId, `Oi ${msg.text}`);
-  myGet("https://secure-crag-60436.herokuapp.com/", (payload) => {
+  myGet("http://localhost:3000", (payload) => {
     console.log(payload);
   });
   // send a message to the chat acknowledging receipt of their message
